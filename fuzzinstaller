@@ -36,7 +36,7 @@ function fuz {
   echo "Would you like to change the WINEPREFIX variable 'permanantly'? (RECCOMENDED) Y/N"
   read yn
   echo
-  if [[ $param = Y || $param = y ]] ; then
+  if [[ $yn = Y || $param = y ]] ; then
     echo "\033[1;33mEditing your .bashrc to account for changes.\033[0m"
     echo "export WINEPREFIX=$HOME/.wine-fuzzbunch" >> $HOME/.bashrc
     export WINEPREFIX=$HOME/.wine-fuzzbunch
